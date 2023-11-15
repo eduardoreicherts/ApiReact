@@ -20,7 +20,7 @@ const Asside = ({ repos }) => {
           rel="noreferrer"
           marginTop={"10px"}
         >
-          Acesar repositório
+          Acesar perfil
         </Link>
       </CardContent>
     </Card>
