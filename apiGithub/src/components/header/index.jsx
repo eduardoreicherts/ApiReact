@@ -51,8 +51,8 @@ const Search = styled('div')(({ theme }) => ({
   const Header = ({handleSubmit, setName}) => {
 
     return (
-        <Box sx={{ flexGrow: 1, backgroundColor: "#24292F"}}>
-      <AppBar position="static" backgroundColor="#24292F">
+        <Box sx={{ flexGrow: 1}}>
+      <AppBar position="static" sx={{backgroundColor: "#24292F", borderRadius: "5px"}}>
         <Toolbar>
           <Typography
             variant="h6"

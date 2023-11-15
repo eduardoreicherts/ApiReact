@@ -14,9 +14,11 @@ const MaterialCard = ({ repos }) => {
         <Chip
           label={repos.language ? repos.language : "Desconhecida"}
           color="primary"
+          sx={{background: "#51565A"}}
         />
         <br />
         <Link
+          color={"#fff"}
           variant="body2"
           href={repos.html_url}
           target="_blank"

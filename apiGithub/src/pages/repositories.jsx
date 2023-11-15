@@ -4,7 +4,7 @@ import "./index.css"
 import Grid from "@mui/material/Grid";
 import Header from "../components/header";
 import MaterialCard from "../components/Card";
-import UserCard from "../components/userCard";
+import Asside from "../components/asside";
 
 
 
@@ -25,8 +25,8 @@ const Repositories = () => {
         <Header handleSubmit={handleSubmit} setName={setName} />
         {repos !== null && (
           <div class="response">
-            <UserCard repos={repos} />
-            <Grid container spacing={2}>
+            <Asside repos={repos} />
+            <Grid container spacing={1}>
                 {repos.map((repos, index) => {
               return (
                 <Grid item xs={6} md={6} key={index}>
@@ -43,24 +43,3 @@ const Repositories = () => {
 };
 
 export default Repositories;
-
-/*
-{repos !== null && (
-        <div class="main_result">
-            <div class="list">
-                <table className="repos-list">
-                    <tr>
-                        <th>Nome</th>
-                    {repos.map((item, index) => (
-                    <td key={index}><a href={item.html_url} target="_blank">{item.name}</a></td>
-                    ))}
-                    </tr>
-                </table>
-            </div>
-            <div class="user_information">
-                <img src={repos[0].owner.avatar_url} width = "200"/>
-                <h1>{repos[0].owner.login}</h1>
-            </div>
-        </div>
-        )}
-        */
