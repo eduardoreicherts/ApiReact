@@ -6,7 +6,7 @@ import './index.css'
 
 const Asside = ({ repos }) => {
   return (
-    <Card sx={{ margin: "5px", backgroundColor: "#24292F", width: "30%", display: "flex", justifyContent: "center" }}>
+    <Card sx={{ margin: "5px", backgroundColor: "#24292F", width: "30%", height: "85vh", display: "flex", justifyContent: "center" }}>
       <CardContent class="card">
         <img src={repos[0].owner.avatar_url}/>
         <Typography variant="body1" color="#fff" textAlign="center">
