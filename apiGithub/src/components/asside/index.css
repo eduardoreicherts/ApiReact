@@ -9,6 +9,4 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: fixed;
-    top: 28vh;
 }
